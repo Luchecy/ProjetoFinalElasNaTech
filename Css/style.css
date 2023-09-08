@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --bg-color: #1f1f21;
+  --text-color: #fff;
+  --main-color: #ffae00;
+
+  --big-font: 5rem;
+  --p-font: 1.1rem;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow: scroll;
+  padding: 2em;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 2em;
+  background: transparent;
+  transition: all ease 0.45s;
+}
+
+.logo {
+  color: var(--text-color);
+  font-size: 2.5625em;
+  font-weight: 600;
+  padding: 0.3em;
+}
+.logo span {
+  color: var(--main-color);
+}
+.navbar {
+  display: flex;
+}
+.navbar a {
+  font-size: var(--p-font);
+  font-weight: 500;
+  color: var(--text-color);
+  margin: 0 1em;
+  transition: all ease 0.5s;
+}
+.navbar a:hover {
+  color: var(--main-color);
+}
+.navbar a.active {
+  color: var(--main-color);
+}
+.menu-btn {
+  background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+  box-shadow: 0em 1.25em 2.5em #00000070;
+  border: 0.0625em solid #3b3b3b;
+  padding: 0.625em 1.25em;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#menu-icon {
+  font-size: 1.75em;
+  margin-left: 0.625em;
+  z-index: 6;
+}
+section {
+  padding: 0 10%;
+}
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.875em;
+}
+.home-img {
+  width: 60vh;
+  height: auto;
+}
+.home-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.home-text span {
+  padding: 0.3125em 1.5625em;
+  background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+  box-shadow: 0em 1.25em 2.5em #00000070;
+  border: 0.0625em solid #3b3b3b;
+  border-radius: 100px;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 0.9375em;
+  text-transform: uppercase;
+}
+.home-text h1 {
+  font-size: var(--big-font);
+  margin: 0;
+  margin-bottom: 0.3125em;
+  margin-top: 0.3125em;
+}
+.home-text p {
+  font-size: var(--p-font);
+  font-weight: 400;
+  color: #c3c3c3;
+  line-height: 1.875em;
+  margin-bottom: 0.625em;
+}
+.btn {
+  display: inline-block;
+  padding: 0.875em 2.125em;
+  background: var(--main-color);
+  color: var(--text-color);
+  border: 0.125em solid var(--main-color);
+  font-size: 1em;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.6s ease-in-out;
+}
+.btn:hover {
+  transform: translateY(-0.3125em);
+  background: transparent;
+  color: var(--main-color);
+}
+.dois {
+  background: #141414;
+  border: 0.125em solid #141414;
+  color: var(--text-color);
+  margin-left: 1.5625em;
+}
+.dois:hover {
+  color: #141414;
+  background: var(--text-color);
+  border: 0.125em solid var(--text-color);
+}
+.share{
+    position: absolute;
+    bottom: 3rem;
+    left: 15%;
+    display: flex;
+    align-items: center;
+}
+.share p{
+    font-size: 1.0625em;
+    color: var(--text-color);
+    margin-right: 1.5625em;
+}
+.social i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.8125em;
+    width: 2.8125em;
+    background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+    box-shadow: 0em 1.25em 2.5em #00000070;
+    border: 0.0625em solid #3b3b3b;
+    border-radius: 50%;
+    color: var(--text-color);
+    font-size: 1.25em;
+    margin: 0 0.4375em;
+    transition: all 0.6s ease-in-out;
+}
+.social i:hover{
+    transform: translateY(-0.625em);
+}
+@media (max-width: 85.625em){
+    header{padding: 0.9375em 8%;
+    
+    transition: .2s;}
+    section{
+        padding: 0 8%;
+        transition: .2s;
+    }
+    .share{
+        left: 10%;
+        transition: .2s;
+    }
+    :root{
+        --big-font: 4.5rem;
+        --p-font: 1rem;
+        transition: .2s;
+    }
+}
+@media (max-width: 63.75em){
+    .navbar a{
+        margin: 0 0.9375em;
+    }
+    :root{
+        --big-font: 4rem;
+        --p-font: 1rem;
+        transition: .2s;
+    }
+}
