@@ -29,7 +29,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5em 2em;
+  padding: 0.5em 0;
   background: transparent;
   transition: all ease 0.45s;
 }
@@ -38,7 +38,8 @@ header {
   color: var(--text-color);
   font-size: 2.5625em;
   font-weight: 600;
-  padding: 0.3em;
+  padding: 0.2em;
+  margin-right: 0;
 }
 .logo span {
   color: var(--main-color);
@@ -46,9 +47,12 @@ header {
 .navbar {
   display: flex;
 }
+body.menu-open {
+  overflow: hidden; /* Impede que a página principal seja rolada quando o menu estiver aberto */
+}
 .navbar a {
   font-size: var(--p-font);
-  font-weight: 500;
+  font-weight: 400;
   color: var(--text-color);
   margin: 0 1em;
   transition: all ease 0.5s;
@@ -75,7 +79,8 @@ header {
   z-index: 6;
 }
 section {
-  padding: 0 10%;
+  padding: 0;
+  width: 100%;
 }
 .home {
   position: relative;
