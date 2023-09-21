@@ -163,7 +163,7 @@ ul{
     border-radius: 100px;
     color: var(--text-color);
     font-weight: 700;
-    font-size: 0.9375em;
+    font-size: var(--p-font);
     text-transform: uppercase;
 }
 .home-text h1{
@@ -394,12 +394,17 @@ footer{
 }
 
 @media (max-width: 59.375em){
+    :root{
+        --big-font: 4rem;
+        --p-font: 0.2em;
+        transition: .2s;
+        --bg-color: #1f1f21;
+        --main-color: #ffae00;
+        --text-color: #ffffff;
+    }
+    
     .share {
-        display: flex;
-        align-items: center;
-        left: 1.2em;
-        bottom: .8rem;
-        left: px;
+        display: none;
     }
     section{
       padding: 4.375em 4%;
@@ -414,11 +419,12 @@ footer{
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column;
     }
     .home-text{
       order: 2;
       text-align: center;
+      padding: 0 20px;
     }
     .home-img{
       margin: auto;
@@ -437,8 +443,13 @@ footer{
     div.main-btn {
         display: inline-block; /* Altere para "inline-block" para que ele ocupe apenas o espaço necessário */
         width: auto; /* Defina a largura para "auto" para se ajustar ao conteúdo */
-        height: 50px; /* Defina a altura para "auto" para se ajustar ao conteúdo */
+        height: auto; /* Defina a altura para "auto" para se ajustar ao conteúdo */
         margin: 0;
+    }
+
+    .home-text span {
+        padding: 0.2em 1em; /* Ajuste o padding conforme necessário */
+        font-size: 0.8em; /* Ajuste o tamanho da fonte conforme necessário */
     }
 
     .header_nav a.cont{
