@@ -41,7 +41,7 @@ main{
     z-index: 1000;
     align-items: center;
     justify-content: space-evenly;
-    transition: all ease 0.45s
+    transition: all ease 0.45s;
     padding: 0.5em 0;
 }
 
@@ -341,7 +341,7 @@ footer{
     div.main-btn{
         display: flex;
       }
-    }
+    
     .home-img img{
       animation: imgg 2s ease-in-out infinite;
       animation-delay: 2s;
@@ -357,7 +357,6 @@ footer{
         transform: translateY(0);
       }
     }
-
 }
 
 @media screen and (max-width: 48em) {
