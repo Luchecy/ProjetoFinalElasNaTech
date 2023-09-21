@@ -67,6 +67,10 @@ section {
     width: 100%;
 }
 
+section.home{
+    padding-bottom: 130px;
+}
+
 #hamburguer{
     background-color: var(--bg-color);
     color: var(--color-white);
@@ -120,6 +124,16 @@ ul{
     color: var(--main-color);
 }
 
+.header_nav a.cont {
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+.header_nav a.cont:hover {
+    background-color: var(--text-color);
+    color: var(--main-color);
+}
+
 /* Home */
 
 .home {
@@ -139,6 +153,7 @@ ul{
     width: 100%;
     height: 100%;
     object-fit: contain;
+    margin-top: 150px;
 }
 .home-text span {
     padding: 0.3125em 1.5625em;
@@ -167,43 +182,42 @@ ul{
     margin-bottom: 0.625em;
 }
 
+
 a.btn{
     display: inline-block;
     padding: 0.875em 2.125em;
     background: var(--main-color);
     color: var(--text-color);
-    border: 0.125em solid #ffae00;
+    border: 0.125em solid var(--main-color);
     font-size: 1em;
     font-weight: 600;
     border-radius: 8px;
     transition: all 0.6s ease-in-out;
+    margin-bottom: 0;
+    margin-top: 10px;
 }
-
-
 
 a.btn.dois{
     display: inline-block;
-    padding: 0.875em 2.125em;
-    
+    background: #141414;
     color: var(--text-color);
-    
+    border: 0.125em solid #141414;
     font-size: 1em;
     font-weight: 600;
     border-radius: 8px;
     transition: all 0.6s ease-in-out;
-    background: #141414;
-    border: 0.125em solid #141414;
-    color: var(--text-color);
     margin-left: 1.5625em;
 }
 
-a.btn:hover {
+a.primary-btn:hover {
     transform: translateY(-0.3125em);
     background: transparent;
     color: var(--main-color);
+    border-color: var(--main-color);
 }
 
-a.btn.dois:hover {
+a.dois:hover {
+    transform: translateY(-0.3125em);
     color: #141414;
     background: var(--text-color);
     border: 0.125em solid var(--text-color);
@@ -211,11 +225,11 @@ a.btn.dois:hover {
 
 .share{
     position: absolute;
-    bottom: 3rem;
-    left: 15%;
+    bottom: 7rem;
     display: flex;
     align-items: center;
 }
+
 .share p{
     font-size: 1.0625em;
     color: var(--text-color);
@@ -324,8 +338,8 @@ footer{
         gap:1em;
     }
 
-    .btn{
-        padding: 0.5625em 1.75em;
+    div.main-btn{
+        display: flex;
       }
     }
     .home-img img{
@@ -347,16 +361,106 @@ footer{
 }
 
 @media screen and (max-width: 48em) {
-    .home {
-        flex-direction: column; /* Altera a direção para coluna */
-        text-align: center; /* Centraliza o texto na coluna */
+    .share {
+        display: none;
+    }
+    section{
+      padding: 4.375em 4%;
+      display: flex;
+        flex-direction: column; /* Altere para flex-direction: column; */
+        align-items: center;
+    }
+    header{
+      padding: 0.6875em 4%;
+      background: #2d2d2d;
+    }
+    .home{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    }
+    .home-text{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .home-img{
+      margin: auto;
+      width: 100%;
+      max-width: 28.125em
+    }
+    .home-img img{
+      max-width: 28.125em;
+      height: auto;
+    }
+}
+
+@media (max-width: 59.375em){
+    .share {
+        display: flex;
+        align-items: center;
+        left: 1.2em;
+        bottom: .8rem;
+        left: px;
+    }
+    section{
+      padding: 4.375em 4%;
+    }
+    header{
+      padding: 0.6875em 4%;
+      background: #2d2d2d;
+    }
+    .home{
+    padding-bottom: 140px;
+    padding-top: 10px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    }
+    .home-text{
+      order: 2;
+      text-align: center;
+    }
+    .home-img{
+      margin: auto;
+      height: auto;
+      width: auto;
+    }
+    .home-img img{
+      max-width: 28.125em;
+      width: 100%;
+      height: auto;
+    }
+    a.btn {
+        margin-bottom: 4em; /* Ajuste o valor conforme necessário */
     }
 
-    .home-img {
-        width: 100%; /* Define a largura máxima da imagem como 100% */
-        max-width: 100%; /* Garante que a largura não ultrapasse a largura máxima do contêiner */
-        height: auto; /* Mantém a proporção de aspecto da imagem */
-        margin-top: 1.5rem; /* Adiciona espaçamento superior entre a imagem e o texto */
+    div.main-btn {
+        display: inline-block; /* Altere para "inline-block" para que ele ocupe apenas o espaço necessário */
+        width: auto; /* Defina a largura para "auto" para se ajustar ao conteúdo */
+        height: 50px; /* Defina a altura para "auto" para se ajustar ao conteúdo */
+        margin: 0;
+    }
+
+    .header_nav a.cont{
+        background-color: transparent;
+    }
+    .header_nav a.cont:hover{
+        background-color: transparent;
+    }
+  }
+
+  @media (max-width: 63.75em){
+    .navbar a{
+        margin: 0 0.9375em;
+    }
+    :root{
+        --big-font: 4rem;
+        --p-font: 0.9rem;
+        transition: .2s;
+        --bg-color: #1f1f21;
+        --main-color: #ffae00;
+        --text-color: #ffffff;
     }
 }
 
