@@ -419,7 +419,6 @@ footer{
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     }
     .home-text{
       order: 2;
@@ -438,6 +437,8 @@ footer{
     }
     a.btn {
         margin-bottom: 4em; /* Ajuste o valor conforme necessário */
+        padding: 0.5em 1.25em; /* Tamanho menor para telas menores */
+        font-size: 0.9em; /* Tamanho menor da fonte para telas menores */
     }
 
     div.main-btn {
