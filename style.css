@@ -21,11 +21,13 @@ body{
     overflow: scroll;
 }
 
-
+section.home{
+    padding: 0 100px 0 100px;
+}
 
 main{
     background-color: var(--bg-color);
-    padding: 0 100px 0 100px;
+    padding: 10px;
     margin-top: 10px;
 }
 
@@ -401,6 +403,16 @@ footer{
         --bg-color: #1f1f21;
         --main-color: #ffae00;
         --text-color: #ffffff;
+    }
+
+    main{
+        background-color: var(--bg-color);
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    section.home{
+        padding: 0;
     }
     
     .share {
