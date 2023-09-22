@@ -70,7 +70,12 @@ section {
 }
 
 section.home{
-    padding-bottom: 130px;
+    padding-bottom: 100px;
+    padding-top: 5px;
+}
+
+.hr{
+    color: var(--main-color);
 }
 
 #hamburguer{
@@ -519,4 +524,14 @@ footer{
     }
 }
 
+.cor{
+    background-color: var(--main-color);
+}
+.text-bg-amarelo{
+    color: #ffae00 !important;
+}
+
+.text-bg-branco{
+    color: #ffffff !important;
+}
 
