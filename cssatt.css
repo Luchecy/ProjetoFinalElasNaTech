@@ -1,0 +1,541 @@
+/* Estilos globais para resetar as configurações padrão */
+*{
+    font-family: "Rubik", sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis de cores e tamanhos globais */
+:root{
+    --bg-color: #1f1f21;
+    --main-color: #ffae00;
+    --text-color: #ffffff;
+
+    --big-font: 5rem;
+    --p-font: 1.1rem;
+}
+
+/* Estilos para o corpo da página */
+body{
+    color: var(--text-color);
+    overflow: scroll;
+}
+
+/* Estilos para a seção de home */
+section.home{
+    padding: 50px 100px 0 100px;
+}
+
+/* Estilos para a seção principal (main) */
+main{
+    background-color: var(--bg-color);
+    padding: 10px;
+    margin-top: 60px;
+}
+
+/* Estilos para o cabeçalho */
+.header{
+    text-align: center;
+    margin: auto;
+    background-color: var(--bg-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all ease 0.45s;
+    padding: 0.5em 0;
+}
+
+/* Estilos para o logotipo no cabeçalho */
+.header_logo{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 2.4em;
+    font-weight: 600;
+    padding: 0.2em;
+    margin-left: 0;
+}
+
+/* Estilos para o logotipo no cabeçalho ao ser um link */
+a.header_logo{
+    margin-left: 2%;
+}
+
+/* Estilos para a cor de destaque no logotipo */
+.header_logo span {
+    color: var(--main-color);
+}
+
+/* Estilos para as seções */
+section {
+    padding: 0;
+    width: 100%;
+}
+
+/* Estilos para a seção de home */
+section.home{
+    padding-bottom: 130px;
+}
+
+/* Estilos para o ícone do hamburguer */
+#hamburguer{
+    background-color: var(--bg-color);
+    color: var(--color-white);
+    display: block;
+    text-align: center;
+    padding: 0.3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+/* Estilos para o ícone do hamburguer com cor de destaque */
+span#hamburguer.material-symbols-rounded{
+    color: var(--main-color);
+}
+
+/* Estilos para a navegação do cabeçalho */
+.header_nav{
+    background-color: var(--bg-color);
+    display: none;
+    margin-top: 1em;
+}
+
+ul{
+    margin: 0;
+}
+
+.header_nav ul{
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: var(--p-font);
+    color: var(--text-color);
+    transition: all ease 0.5s;
+    font-weight: 400;
+}
+
+.header_nav a{
+    color: var(--color-white);
+    padding: 1em;
+    text-decoration: none;
+}
+
+/* Estilos para a navegação do cabeçalho quando exibida */
+.header_nav.show{
+    display: block;
+}
+
+/* Estilos para os links de navegação no cabeçalho ao passar o mouse */
+.header_nav a:hover{
+    color: var(--main-color);
+    background-color: color-mix(in srgb, var(--bg-color), var(--color-white) 80%);
+}
+
+/* Estilos para o link de navegação ativo no cabeçalho */
+.header_nav a.active {
+    color: var(--main-color);
+}
+
+/* Estilos para o link de navegação "cont" no cabeçalho */
+.header_nav a.cont {
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+/* Estilos para o link de navegação "cont" ao passar o mouse */
+.header_nav a.cont:hover {
+    background-color: var(--text-color);
+    color: var(--main-color);
+}
+
+/* Estilos para a seção de home */
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.875em;
+}
+
+/* Estilos para a imagem na seção de home */
+.home-img {
+    width: 60vh;
+    height: auto;
+}
+
+/* Estilos para a imagem na seção de home com animação */
+.home-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: 5px;
+    animation: imgg 2s ease-in-out infinite;
+    animation-delay: 2s;
+    max-width: 28.125em;
+}
+
+/* Estilos para a animação da imagem */
+@keyframes imgg{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-1.375em);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para o texto na seção de home */
+.home-text span {
+    padding: 0.3125em 1.5625em;
+    background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+    box-shadow: 0em 1.25em 2.5em #00000070;
+    border: 0.0625em solid #3b3b3b;
+    border-radius: 100px;
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: var(--p-font);
+    text-transform: uppercase;
+}
+
+.home-text h1{
+    font-size: var(--big-font);
+    margin: 0;
+    margin-bottom: 0.3125em;
+    margin-top: 0.3125em;
+    color: var(--text-color);
+}
+
+.home-text p {
+    font-size: var(--p-font);
+    font-weight: 400;
+    color: #c3c3c3;
+    line-height: 1.875em;
+    margin-bottom: 0.625em;
+}
+
+/* Estilos para os botões */
+a.btn{
+    display: inline-block;
+    padding: 0.875em 2.125em;
+    background: var(--main-color);
+    color: var(--text-color);
+    border: 0.125em solid var(--main-color);
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.6s ease-in-out;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+a.btn.dois{
+    display: inline-block;
+    background: #141414;
+    color: var(--text-color);
+    border: 0.125em solid #141414;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.6s ease-in-out;
+    margin-left: 1.5625em;
+}
+
+/* Estilos para os botões ao passar o mouse */
+a.primary-btn:hover {
+    transform: translateY(-0.3125em);
+    background: transparent;
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+a.dois:hover {
+    transform: translateY(-0.3125em);
+    color: #141414;
+    background: var(--text-color);
+    border: 0.125em solid var(--text-color);
+}
+
+/* Estilos para a seção de compartilhamento */
+.share{
+    position: absolute;
+    bottom: 7rem;
+    display: flex;
+    align-items: center;
+}
+
+.share p{
+    font-size: 1.0625em;
+    color: var(--text-color);
+    margin-right: 1.5625em;
+}
+
+/* Estilos para os ícones de redes sociais */
+.social i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.8125em;
+    width: 2.8125em;
+    background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+    box-shadow: 0em 1.25em 2.5em #00000070;
+    border: 0.0625em solid #3b3b3b;
+    border-radius: 50%;
+    color: var(--text-color);
+    font-size: 1.25em;
+    margin: 0 0.4375em;
+    transition: all 0.6s ease-in-out;
+}
+
+/* Estilos para os ícones de redes sociais ao passar o mouse */
+.social i:hover{
+    transform: translateY(-0.625em);
+}
+
+/* Estilos para o rodapé */
+footer{
+    background-color: var(--bg-color);
+    padding: 1em;
+    text-align: center;
+    color: var(--text-color);
+}
+
+/* Estilos para os logotipos no rodapé */
+.logos_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.tamanho{
+    width: 2.5em;
+}
+
+.texto_footer{
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin:0;
+    padding-top: .8rem;
+    color: var(--color-white);
+}
+
+/* Estilos para telas maiores (mínimo de 768px) */
+@media screen and (min-width: 48em){ /*768px ou maior */
+    #hamburguer{
+        display: none;
+    }
+
+    /* Altera as variáveis globais para tamanhos menores */
+    *{
+        :root{
+            --big-font: 3rem;
+            --p-font: 0.9375em;
+            transition: .2s;
+        }
+    }
+
+    /* Estilos para o cabeçalho em telas maiores */
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--bg-color);
+    }
+
+    .header_logo{
+        margin-left: 2em;
+    }
+
+    /* Exibe a navegação do cabeçalho em telas maiores */
+    .header_nav{
+        display: block;
+    }
+
+    .header_nav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+    .header_nav li{
+        display: inline-block;
+    }
+
+    .header_nav a{
+        border-radius: 5px;
+    }
+
+    /* Estilos para os links de navegação do cabeçalho ao passar o mouse em telas maiores */
+    .header_nav a:hover{
+        background-color: var(--color-white);
+        color: var(--main-color);
+    }
+}
+
+/* Estilos para telas maiores (mínimo de 768px) */
+@media screen and (min-width: 48em){/*768px ou maior */
+    /* Altera a direção dos logotipos no rodapé e alinha-os ao centro */
+    .logos_footer{
+        flex-direction: row;
+        justify-content: center;
+        gap:1em;
+    }
+
+    /* Estilos para o elemento .main-btn */
+    div.main-btn{
+        display: flex;
+    }
+    
+    /* Estilos para a imagem na seção de home com animação em telas maiores */
+    .home-img img{
+        animation: imgg 2s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    /* Define a animação para a imagem em telas maiores */
+    @keyframes imgg{
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-1.375em);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+}
+
+/* Estilos para telas menores (máximo de 768px) */
+@media screen and (max-width: 48em) {
+    /* Oculta a seção de compartilhamento em telas menores */
+    .share {
+        display: none;
+    }
+
+    /* Ajusta o espaçamento e alinhamento das seções em telas menores */
+    section{
+        padding: 4.375em 4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajusta o estilo do cabeçalho em telas menores */
+    header{
+        padding: 0.6875em 4%;
+        background: #2d2d2d;
+    }
+
+    /* Ajusta o estilo da seção de home em telas menores */
+    .home{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Ajusta o estilo do texto na seção de home em telas menores */
+    .home-text{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    /* Ajusta o estilo da imagem na seção de home em telas menores */
+    .home-img{
+        margin: auto;
+        width: 100%;
+        max-width: 28.125em
+    }
+
+    .home-img img{
+        max-width: 28.125em;
+        height: auto;
+    }
+
+    /* Ajusta o estilo dos botões em telas menores */
+    a.btn {
+        margin-bottom: 4em;
+        padding: 0.5em 1.25em;
+        font-size: 0.9em;
+    }
+
+    /* Ajusta o estilo do elemento .main-btn em telas menores */
+    div.main-btn {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+
+    /* Ajusta o estilo do elemento .home-text span em telas menores */
+    .home-text span {
+        padding: 0.2em 1em;
+        font-size: 0.8em;
+    }
+
+    /* Ajusta o estilo da imagem na seção de home com animação em telas menores */
+    .home-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin-top: 115px;
+        animation: imgg 2s ease-in-out infinite;
+        animation-delay: 2s;
+        max-width: 28.125em;
+    }
+
+    /* Ajusta o estilo do link de navegação "cont" em telas menores */
+    .header_nav a.cont{
+        background-color: transparent;
+    }
+
+    .header_nav a.cont:hover{
+        background-color: transparent;
+    }
+
+    /* Define a animação para a imagem em telas menores */
+    @keyframes imgg{
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-1.375em);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+
+    /* Remove o padding da seção de home em telas menores */
+    section.home{
+        padding: 0;
+    }
+}
+
+/* Ajustes para telas intermediárias (mínimo de 768px e máximo de 1020px) */
+@media (max-width: 59.375em){
+    /* Ajusta o espaçamento entre os links da barra de navegação */
+    .navbar a{
+        margin: 0 0.9375em;
+    }
+
+    /* Altera as variáveis globais para tamanhos intermediários */
+    :root{
+        --big-font: 4rem;
+        --p-font: 0.9rem;
+        transition: .2s;
+        --bg-color: #1f1f21;
+        --main-color: #ffae00;
+        --text-color: #ffffff;
+    }
+}
