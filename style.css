@@ -403,11 +403,6 @@ footer{
     }
 }
 
-.card-img-top {
-    object-fit: cover;
-    height: 100%;
-}
-
 
 @media (max-width: 59.375em){
     :root{
