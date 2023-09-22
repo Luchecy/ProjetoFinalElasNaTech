@@ -413,6 +413,8 @@ footer{
         --text-color: #ffffff;
     }
 
+    
+
     main{
         background-color: var(--bg-color);
         padding: 10px;
