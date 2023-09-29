@@ -729,6 +729,7 @@ footer{
         margin: 0 .5em;
         width: calc(100%/3);
         text-align: center;
+        border-radius: 10px;
     }
     .image-wrapper{
         margin: 0 auto;
