@@ -59,8 +59,9 @@ body{
     color: var(--main-color);
 }
 
-.hr{
-    color: var(--main-color);
+hr#projetos.featurette-divider{
+    margin: 0;
+    padding: 5px;
 }
 
 #hamburguer{
@@ -371,10 +372,6 @@ body{
 }
 
 .header_logo span {
-    color: var(--main-color);
-}
-
-.hr{
     color: var(--main-color);
 }
 
@@ -920,13 +917,18 @@ footer{
         background-color: transparent;
     }
 
-    .card:not(:first-child){
-        display: none;
+    .card {
+        display: block; /* ou outra propriedade, como flex ou grid, dependendo do layout do seu card */
+        margin: 10px;
     }
 
     .image-wrapper img{
         max-width: 100%;
         max-height: 100%;
+    }
+
+    section.projetos_cards{
+        padding: 0 10px;
     }
 
 }
