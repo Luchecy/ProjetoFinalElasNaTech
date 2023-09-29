@@ -893,7 +893,7 @@ footer{
         width: auto; /* Defina a largura para "auto" para se ajustar ao conteúdo */
         height: auto; /* Defina a altura para "auto" para se ajustar ao conteúdo */
         margin: 10px;
-        width: 80%;
+        width: 100%;
         min-width: 150px;
     }
 
