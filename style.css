@@ -573,12 +573,12 @@ footer{
 
     :root{
         --big-font: 4rem;
-        --p-font: 0.9rem;
+        --p-font: 0.8rem;
         transition: .2s;
     }
 
     .fontg{
-        font-size: 4rem;
+        font-size: 3rem;
         display: flex;
     }
 
