@@ -14,11 +14,26 @@
     --big-font: 5rem;
     --p-font: 1.1rem;
     transition: .2s;
+    
 }
 
-.cor{
-    background-color: var(--main-color);
+.fontg{
+    font-size: 4rem;
 }
+
+/*Cor Background*/
+.bg-amarelo{
+    background-color: var(--main-color) !important;
+}
+
+.bg-preto{
+    background-color: var(--bg-color);
+}
+
+.bg-white{
+    background-color: var(--text-color);
+}
+
 .text-bg-amarelo{
     color: #ffae00 !important;
 }
@@ -30,6 +45,14 @@
 body{
     overflow-x: hidden;
 
+}
+
+main{
+    background-color: var(--bg-color);
+}
+
+.borda{
+    border-radius: 10px;
 }
 
 .header{
@@ -65,10 +88,12 @@ hr#projetos.featurette-divider{
     padding: 5px;
 }
 
-hr#aprendizados.featurette-divider{
+.featurette-divider{
     margin: 0;
-    padding: 5px;
+    padding: 0;
     width: 100%;
+    color: var(--text-color);
+    border: 0;
 }
 
 #hamburguer{
@@ -432,6 +457,15 @@ footer{
     height: 225px;
   }
   
+  div.card-body{
+    background-color: var(--text-color);
+    border-radius: 10px;
+  }
+
+  img.card-img-top{
+    border-radius: 10px;
+  }
+
 
 /*------------------------------------------@media maior que 36em------------------------------------------*/
 
@@ -543,6 +577,11 @@ footer{
         transition: .2s;
     }
 
+    .fontg{
+        font-size: 4rem;
+        display: flex;
+    }
+
     @keyframes imgg{
         0%{
           transform: translateY(0);
@@ -556,7 +595,7 @@ footer{
     }
     
     main{
-        background-color: var(--bg-color);
+        background-color: var(--main-color);
         padding: 10px;
         margin-top: 10px;
     }
