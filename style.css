@@ -18,7 +18,7 @@
 }
 
 .fontg{
-    font-size: 4rem;
+    font-size: 4em;
 }
 
 /*Cor Background*/
@@ -53,6 +53,17 @@ main{
 
 .borda{
     border-radius: 10px;
+}
+
+.margin{
+    margin: 5px;
+}
+
+.imagem-de-fundo{
+    background-image: url('Imagens/ceu.jpg');
+    background-size: cover; /* Para ajustar a imagem ao tamanho da seção */
+    background-repeat: no-repeat; /* Para evitar repetição da imagem */
+    background-position: center center; /* Para centralizar a imagem horizontal e verticalmente */
 }
 
 .header{
@@ -578,7 +589,7 @@ footer{
     }
 
     .fontg{
-        font-size: 3rem;
+        font-size: 2em;
         display: flex;
     }
 
