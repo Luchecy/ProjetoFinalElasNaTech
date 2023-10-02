@@ -1,3 +1,5 @@
+/*------------------------------------------------------Configuração geral------------------------------------------------------*/
+
 *{
     font-family: "Rubik", sans-serif;
     list-style-type: none;
@@ -17,11 +19,46 @@
     
 }
 
+/*------------------------------------------------------Tags------------------------------------------------------*/
+
+
+body{
+    overflow-x: hidden;
+}
+
+main{
+    background-color: var(--bg-color);
+}
+
+ul{
+    margin: 0;
+}
+
+span{
+    color: var(--main-color);
+}
+
+/*------------------------------------------------------Classes------------------------------------------------------*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .fontg{
     font-size: 4em;
     display: flex;
     letter-spacing: 1px;
     justify-content: center;
+}
+
+.borda{
+    border-radius: 10px;
+}
+
+.margin{
+    margin: 5px;
 }
 
 /*Cor Background*/
@@ -49,50 +86,17 @@
     color: #1f1f21!important;
 }
 
-/*imagem jornada*/
-.image-text-container {
-    display: flex;
-    align-items: center; /* Alinha verticalmente os elementos */
-    gap: 20px; /* Espaço entre a imagem e o texto */
-    max-width: 320px;
-    float: left;
-}
-  
-.text-box {
-    flex: 1; /* Permite que o texto ocupe o espaço disponível */
+/*------------------------------------------------------Divisor de sessões------------------------------------------------------*/
+
+.featurette-divider{
+    margin: 10px;
+    padding: 5px;
+    width: 100%;
+    color: var(--text-color);
+    border: 0;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: row; /* Coloca os elementos lado a lado */
-    align-items: center; /* Alinha verticalmente os elementos ao centro */
-    gap: 20px; /* Espaço entre a imagem e o texto */
-}
-  
-
-
-body{
-    overflow-x: hidden;
-}
-
-main{
-    background-color: var(--bg-color);
-}
-
-.borda{
-    border-radius: 10px;
-}
-
-.margin{
-    margin: 5px;
-}
-
-.imagem-de-fundo{
-    background-image: url('Imagens/ceu.png');
-    background-size: cover; /* Para ajustar a imagem ao tamanho da seção */
-     /* Para evitar repetição da imagem */
-    background-position: center center; /* Para centralizar a imagem horizontal e verticalmente */
-}
+/*------------------------------------------------------Header------------------------------------------------------*/
 
 .header{
     text-align: center;
@@ -119,89 +123,10 @@ main{
     margin-left: 0;
 }
 
-span{
-    color: var(--main-color);
-}
-
-/*------------------------------------------divisor de sessões------------------------------------------*/
-
-hr#jornada.featurette-divider{
-    margin: 10px;
-    padding: 5px;
-}
-
-hr#desafios.featurette-divider{
-    margin: 10px;
-    padding: 5px;
-}
-
-hr#conquistas.featurette-divider{
-    margin: 10px;
-    padding: 5px;
-}
-
-hr#aprendizados.featurette-divider{
-    margin: 10px;
-    padding: 5px;
-}
-
-hr#projetos.featurette-divider{
-    margin: 10px;
-    padding: 5px;
-}
-
-hr#jornada.featurette-divider{
-    margin: 10px;
-    padding: 5px;
-}
-
-hr#elasnatech.featurette-divider{
-    margin: 10px;
-    padding: 5px;
-}
-
-hr#jornada.featurette-divider{
-    margin: 10px;
-    padding: 5px;
-}
-
-hr#contatos.featurette-divider{
-    margin: 10px;
-    padding: 5px;
-}
-
-
-.featurette-divider{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    color: var(--text-color);
-    border: 0;
-}
-
-/*------------------------------------------Menu hamburguer------------------------------------------*/
-#hamburguer{
-    background-color: var(--bg-color);
-    color: var(--color-white);
-    display: block;
-    text-align: center;
-    padding: 0.3em;
-    cursor: pointer;
-    font-size: 2em;
-}
-
-span#hamburguer.material-symbols-rounded{
-    color: var(--main-color);
-}
-
 .header_nav{
     background-color: var(--bg-color);
     display: none;
     margin-top: 1em;
-}
-
-ul{
-    margin: 0;
 }
 
 .header_nav ul{
@@ -244,7 +169,7 @@ ul{
     color: var(--main-color);
 }
 
-/* Home */
+/*------------------------------------------------------Quem sou eu------------------------------------------------------*/
 
 .home {
     position: relative;
@@ -301,74 +226,7 @@ ul{
     margin-bottom: 30px;
 }
 
-div.main-btn {
-    display: inline-block; /* Altere para "inline-block" para que ele ocupe apenas o espaço necessário */
-    width: auto; /* Defina a largura para "auto" para se ajustar ao conteúdo */
-    height: auto; /* Defina a altura para "auto" para se ajustar ao conteúdo */
-    margin: 10px;
-    width: 60%;
-    min-width: 150px;
-    justify-content: space-around;
-}
-
-a.btn{
-    display: inline-block;
-    background: var(--main-color);
-    color: var(--text-color);
-    border: 0.125em solid var(--main-color);
-    font-size: 1em;
-    font-weight: 600;
-    border-radius: 8px;
-    transition: all 0.6s ease-in-out;
-    justify-content: space-between;
-    text-align: center;
-    min-width: 150px;
-}
-
-a.btn.dois{
-    display: inline-block;
-    background: #141414;
-    color: var(--text-color);
-    border: 0.125em solid #141414;
-    font-size: 1em;
-    font-weight: 600;
-    border-radius: 8px;
-    transition: all 0.6s ease-in-out;
-    justify-content: space-between;
-    text-align: center;
-    min-width: 150px;
-}
-
-a.btn.primary-btn{
-    text-align: center;
-    display: inline-block;
-    background: var(--main-color);
-    color: var(--text-color);
-    border: 0.125em solid var(--main-color);
-    font-size: 1em;
-    font-weight: 600;
-    border-radius: 8px;
-    transition: all 0.6s ease-in-out;
-    justify-content: space-between;
-    text-align: center;
-    min-width: 150px;
-}
-
-a.primary-btn:hover {
-    transform: translateY(-0.3125em);
-    background: transparent;
-    color: var(--main-color);
-    border-color:  0.125em solid var(--main-color);
-}
-
-a.dois:hover {
-    transform: translateY(-0.3125em);
-    color: #141414;
-    background: var(--text-color);
-    border: 0.125em solid var(--text-color);
-}
-
-/* div share */
+/*------------------------------------------------------div share------------------------------------------------------*/
 
 .share{
     display: flex;
@@ -404,7 +262,26 @@ a.dois:hover {
     transform: translateY(-0.625em);
 }
 
-/*------------------------------------------footer------------------------------------------*/
+/*------------------------------------------------------Jornada------------------------------------------------------*/
+
+
+/*------------------------------------------------------Menu hamburguer------------------------------------------------------*/
+
+#hamburguer{
+    background-color: var(--bg-color);
+    color: var(--color-white);
+    display: block;
+    text-align: center;
+    padding: 0.3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+span#hamburguer.material-symbols-rounded{
+    color: var(--main-color);
+}
+
+/*------------------------------------------------------footer------------------------------------------------------*/
 
 footer{
     background-color: var(--bg-color);
@@ -432,7 +309,7 @@ footer{
     color: var(--color-white);
 }
 
-/*------------------------------------------carousel------------------------------------------*/
+/*------------------------------------------------------Carousel------------------------------------------------------*/
 
 .image-wrapper{
     display: flex;
@@ -458,14 +335,20 @@ footer{
     padding: 1em;
 }
 
-/*------------------------------------------aprendizados------------------------------------------*/
-
+/*------------------------------------------------------Aprendizados------------------------------------------------------*/
 .feature-icon-small{
     width: 3rem;
     height: 3rem;
 }
 
-/*------------------------------------------cardssssssss------------------------------------------*/
+.imagem-de-fundo{
+    background-image: url('Imagens/ceu.png');
+    background-size: cover; /* Para ajustar a imagem ao tamanho da seção */
+     /* Para evitar repetição da imagem */
+    background-position: center center; /* Para centralizar a imagem horizontal e verticalmente */
+}
+
+/*------------------------------------------------------Cards------------------------------------------------------*/
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -473,12 +356,6 @@ footer{
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-  }
-
-  @media (min-width: 768px) { /*para telas maiores (768 pixels ou mais de largura), aumentando o tamanho da fonte para imagens de espaço reservado maiores.*/
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
   }
 
   .b-example-divider {
@@ -550,7 +427,8 @@ footer{
     border-radius: 10px;
   }
 
-/*------------------------------------------contatos------------------------------------------*/
+/*------------------------------------------------------contatos------------------------------------------------------*/
+
 
 #contatos .form-control{
     background-color: var(--main-color);
@@ -566,15 +444,8 @@ footer{
     height: 44px;
 }
 
-/*------------------------------------------classes-----------------------------------------*/
+/*------------------------------------------------------botoes------------------------------------------------------*/
 
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-/*------------------------------------------botoes------------------------------------------*/
 .botao:hover{
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -589,10 +460,127 @@ footer{
     color: var(--bg-color);
 }
 
+div.main-btn {
+    display: inline-block; /* Altere para "inline-block" para que ele ocupe apenas o espaço necessário */
+    width: auto; /* Defina a largura para "auto" para se ajustar ao conteúdo */
+    height: auto; /* Defina a altura para "auto" para se ajustar ao conteúdo */
+    margin: 10px;
+    width: 60%;
+    min-width: 150px;
+    justify-content: space-around;
+}
+
+a.btn{
+    display: inline-block;
+    background: var(--main-color);
+    color: var(--text-color);
+    border: 0.125em solid var(--main-color);
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.6s ease-in-out;
+    justify-content: space-between;
+    text-align: center;
+    min-width: 150px;
+}
+
+a.btn.dois{
+    display: inline-block;
+    background: #141414;
+    color: var(--text-color);
+    border: 0.125em solid #141414;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.6s ease-in-out;
+    justify-content: space-between;
+    text-align: center;
+    min-width: 150px;
+}
+
+a.btn.primary-btn{
+    text-align: center;
+    display: inline-block;
+    background: var(--main-color);
+    color: var(--text-color);
+    border: 0.125em solid var(--main-color);
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.6s ease-in-out;
+    justify-content: space-between;
+    text-align: center;
+    min-width: 150px;
+}
+
+a.primary-btn:hover {
+    transform: translateY(-0.3125em);
+    background: transparent;
+    color: var(--main-color);
+    border-color:  0.125em solid var(--main-color);
+}
+
+a.dois:hover {
+    transform: translateY(-0.3125em);
+    color: #141414;
+    background: var(--text-color);
+    border: 0.125em solid var(--text-color);
+}
+
+/*------------------------------------------------------Elas na tech------------------------------------------------------*/
+
+.bloco{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: auto; /* Defina a largura máxima desejada */
+    margin: 0 auto; /* Centralize o container horizontalmente */
+    padding: 20px;
+    box-sizing: border-box; /* Inclua preenchimento e borda na largura total */
+}
+
+img.elas{
+    height:300px;
+    width: 350px;
+    object-fit: contain;
+    object-position: center;
+    max-height: 80vh;
+    margin-top: 5px;
+    max-width: 28.125em;
+    display: block; /* Evite espaços em branco indesejados sob a imagem */
+    border: 30px;
+}
+
+.left {
+    flex: 1; /* A imagem ocupará 1 parte da largura disponível */
+    justify-content: center;
+    padding: 0 20px;
+    align-items: center;
+}
+
+div.left{
+    justify-content: center;
+}
+
+.right {
+    flex: 2;
+    padding: 0 20px;
+    margin: 20px; /* Adicione espaçamento acima do texto */
+}
 
 
 
-/*------------------------------------------@media maior que 36em------------------------------------------*/
+
+
+
+
+
+
+
+
+/*------------------------------------------------------@media maior que 36em------------------------------------------------------*/
 
 @media screen and (min-width: 36em){
 
@@ -686,9 +674,37 @@ footer{
         justify-content: center;
     }
 
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+
 }
 
-/*------------------------------------------@media menor que 36em------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------@media menor que 36em------------------------------------------------------*/
 
 @media screen and (max-width: 36em){ /*menor que 36em*/
 
@@ -896,5 +912,22 @@ footer{
     div.card-body{
         text-align: center;
     }
+
+    .bloco {
+        flex-direction: column; /* Altera a direção para coluna */
+        text-align: center; /* Centraliza o texto */
+    }
+    
+    .left {
+        margin-bottom: 20px; /* Adiciona um espaçamento entre a imagem e o texto */
+    }
+    
+    img.elas {
+        width: 100%; /* Faz a imagem ocupar toda a largura da coluna */
+        height: auto; /* Mantém a proporção da imagem */
+        object-fit: contain;
+        
+    }
+    
 
 }
