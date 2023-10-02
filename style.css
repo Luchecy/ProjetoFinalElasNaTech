@@ -738,9 +738,13 @@ div.left{
     }
     
     main{
-        background-color: var(--main-color);
+        background-color: var(--bg-color);
         padding: 10px;
         margin-top: 10px;
+    }
+
+    body{
+        overflow-x: hidden;
     }
 
     div.home-text{
