@@ -19,6 +19,9 @@
 
 .fontg{
     font-size: 4em;
+    display: flex;
+    letter-spacing: 1px;
+    justify-content: center;
 }
 
 /*Cor Background*/
@@ -42,9 +45,34 @@
     color: #ffffff !important;
 }
 
+.text-bg-preto{
+    color: #1f1f21!important;
+}
+
+/*imagem jornada*/
+.image-text-container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os elementos */
+    gap: 20px; /* Espaço entre a imagem e o texto */
+    max-width: 320px;
+    float: left;
+}
+  
+.text-box {
+    flex: 1; /* Permite que o texto ocupe o espaço disponível */
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row; /* Coloca os elementos lado a lado */
+    align-items: center; /* Alinha verticalmente os elementos ao centro */
+    gap: 20px; /* Espaço entre a imagem e o texto */
+}
+  
+
+
 body{
     overflow-x: hidden;
-
 }
 
 main{
@@ -60,9 +88,9 @@ main{
 }
 
 .imagem-de-fundo{
-    background-image: url('Imagens/ceu.jpg');
+    background-image: url('Imagens/ceu.png');
     background-size: cover; /* Para ajustar a imagem ao tamanho da seção */
-    background-repeat: no-repeat; /* Para evitar repetição da imagem */
+     /* Para evitar repetição da imagem */
     background-position: center center; /* Para centralizar a imagem horizontal e verticalmente */
 }
 
@@ -79,6 +107,7 @@ main{
     align-items: center;
     justify-content: space-evenly;
     transition: all ease 0.45s;
+    box-sizing: border-box;
 }
 
 .header_logo{
@@ -94,10 +123,53 @@ span{
     color: var(--main-color);
 }
 
-hr#projetos.featurette-divider{
-    margin: 0;
+/*------------------------------------------divisor de sessões------------------------------------------*/
+
+hr#jornada.featurette-divider{
+    margin: 10px;
     padding: 5px;
 }
+
+hr#desafios.featurette-divider{
+    margin: 10px;
+    padding: 5px;
+}
+
+hr#conquistas.featurette-divider{
+    margin: 10px;
+    padding: 5px;
+}
+
+hr#aprendizados.featurette-divider{
+    margin: 10px;
+    padding: 5px;
+}
+
+hr#projetos.featurette-divider{
+    margin: 10px;
+    padding: 5px;
+}
+
+hr#jornada.featurette-divider{
+    margin: 10px;
+    padding: 5px;
+}
+
+hr#elasnatech.featurette-divider{
+    margin: 10px;
+    padding: 5px;
+}
+
+hr#jornada.featurette-divider{
+    margin: 10px;
+    padding: 5px;
+}
+
+hr#contatos.featurette-divider{
+    margin: 10px;
+    padding: 5px;
+}
+
 
 .featurette-divider{
     margin: 0;
@@ -107,6 +179,7 @@ hr#projetos.featurette-divider{
     border: 0;
 }
 
+/*------------------------------------------Menu hamburguer------------------------------------------*/
 #hamburguer{
     background-color: var(--bg-color);
     color: var(--color-white);
@@ -367,7 +440,7 @@ footer{
     justify-content: center;
 }
 
-.projetos_cards{
+.conquista_cards{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -476,6 +549,47 @@ footer{
   img.card-img-top{
     border-radius: 10px;
   }
+
+/*------------------------------------------contatos------------------------------------------*/
+
+#contatos .form-control{
+    background-color: var(--main-color);
+    border-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+#contatos .form-control::placeholder{
+    color: var(--bg-color);
+}
+
+#contatos input.form-control{
+    height: 44px;
+}
+
+/*------------------------------------------classes-----------------------------------------*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*------------------------------------------botoes------------------------------------------*/
+.botao:hover{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.botao1{
+    background-color: var(--main-color);
+}
+
+.botao1:hover{
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+
 
 
 /*------------------------------------------@media maior que 36em------------------------------------------*/
@@ -589,8 +703,10 @@ footer{
     }
 
     .fontg{
-        font-size: 2em;
+        font-size: 1.6em;
         display: flex;
+        letter-spacing: 1px;
+        justify-content: center;
     }
 
     @keyframes imgg{
@@ -749,7 +865,7 @@ footer{
         max-height: 100%;
     }
 
-    section.projetos_cards{
+    section.conquista_cards{
         padding: 0 10px;
     }
 
@@ -759,7 +875,7 @@ footer{
         justify-content: center;
     }
     
-    .projetos_cards{
+    .conquista_cards{
         display: flex;
         align-items: center;
         justify-content: center;
