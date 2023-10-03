@@ -338,9 +338,8 @@ section.trailer{
 
 img.tamanhoimagem{
     max-width: 100%; /* Mas não excede 100% da largura do contêiner pai */
-    max-height: auto; /* Mantém a proporção da altura com base na largura */
+    max-height: 100%; /* Mantém a proporção da altura com base na largura */
     width: 600px;
-    height: 315px;
 }
 
 .trailer_botao{
