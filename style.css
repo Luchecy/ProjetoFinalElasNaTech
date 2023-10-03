@@ -945,19 +945,17 @@ div.left{
         
     }
 
-    .foto-img{
-        margin: auto;
+    .foto-img {
+        /* Remova a restrição de largura */
         height: auto;
-        width: auto;
-        justify-content: center;
-        position: relative;
     }
-
-    .foto-img img{
-        max-width: 28.125em;
+    
+    .foto-img img {
         width: 100%;
-        height: auto;
+        height: auto; /* Altere para 'auto' para manter a proporção da imagem */
         object-fit: contain;
+        margin-top: 5px;
+        max-width: 100%; /* Adicione um valor máximo de largura */
     }
     
 
