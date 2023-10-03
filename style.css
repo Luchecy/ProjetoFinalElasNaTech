@@ -828,11 +828,10 @@ a.dois:hover {
     
     main{
         background-color: var(--bg-color);
-        padding: 10px;
+        padding: 20px;
         margin-top: 10px;
         width: 100%; /* Define a largura para ocupar todo o HTML. */
         box-sizing: border-box;
-        display: block; 
     }
 
     body{
