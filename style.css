@@ -25,10 +25,13 @@
 body{
     overflow-x: hidden;
     margin: 0;
+    box-sizing: border-box;
 }
 
 main{
     background-color: var(--bg-color);
+    width: 100%; /* Define a largura para ocupar todo o HTML. */
+    box-sizing: border-box;
 }
 
 ul{
@@ -847,8 +850,9 @@ a.dois:hover {
         width: 100%;
     }
 
-    header.header{
-        padding: 11px 0;
+    header.header {
+        padding: 2vw 0; /* Define o preenchimento vertical como 2% da largura da janela de visualização e 0 de preenchimento horizontal. */
+        max-width: 100vh; /* Garante que a largura máxima do header não ultrapasse 100% da largura da janela de visualização menos 4% para acomodar o preenchimento. */
     }
 
     .home{
