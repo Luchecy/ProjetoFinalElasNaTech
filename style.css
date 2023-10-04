@@ -51,9 +51,9 @@ span{
 }
 
 .fontg{
-    font-size: 4em;
+    font-size: 4rem;
     display: flex;
-    letter-spacing: 1px;
+    letter-spacing: 0.25em;
     justify-content: center;
 }
 
@@ -62,7 +62,7 @@ span{
 }
 
 .margin{
-    margin: 5px;
+    margin: 0.3125rem;
 }
 
 /*Cor Background*/
@@ -93,8 +93,8 @@ span{
 /*------------------------------------------------------Divisor de sessões------------------------------------------------------*/
 
 .featurette-divider{
-    margin: 10px;
-    padding: 5px;
+    margin: 1rem;
+    padding: 0.5rem;
     width: 100%;
     color: var(--text-color);
     border: 0;
@@ -130,13 +130,13 @@ span{
 .header_nav{
     background-color: var(--bg-color);
     display: none;
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 .header_nav ul{
     padding: 0;
     text-transform: uppercase;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     font-size: var(--p-font);
     color: var(--text-color);
     transition: all ease 0.5s;
@@ -165,7 +165,7 @@ span{
 .header_nav a.cont {
     background-color: var(--main-color);
     color: var(--text-color);
-    padding: 4px;
+    padding: 0.25rem; /*aqui ta dando bo*/
 }
 
 .header_nav a.cont:hover {
@@ -195,7 +195,7 @@ span{
     width: 100%;
     height: 100%;
     object-fit: contain;
-    margin-top: 5px;
+    margin-top: 0.3125rem;
     animation: imgg 2s ease-in-out infinite;
     animation-delay: 2s;
     max-width: 28.125em;
@@ -206,20 +206,20 @@ span{
     background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
     box-shadow: 0em 1.25em 2.5em #00000070;
     border: 0.0625em solid #3b3b3b;
-    border-radius: 100px;
+    border-radius: 10px;
     color: var(--text-color);
     font-weight: 700;
     font-size: var(--p-font);
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .home-text h1{
     font-size: var(--big-font);
     margin: 0;
     color: var(--text-color);
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
 }
 
 .home-text p {
@@ -227,7 +227,7 @@ span{
     font-weight: 400;
     color: #c3c3c3;
     line-height: 1.875em;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 /*------------------------------------------------------div share------------------------------------------------------*/
@@ -276,7 +276,7 @@ span{
 }
 
 section.trailer{
-    padding: 16px;
+    padding: 1rem;
 }
 
 .trailer div{
@@ -286,7 +286,7 @@ section.trailer{
 }
 
 .trailer_video .tamanhovideo{
-    border-radius: .8em;
+    border-radius: 0.8em;
     margin-bottom: 1em;
 }
 
@@ -332,14 +332,14 @@ section.trailer{
 }
 
 .imagem .tamanhoimagem{
-    border-radius: .8em;
+    border-radius: 0.8em;
     margin-bottom: 1em;
 }
 
 img.tamanhoimagem{
     max-width: 100%; /* Mas não excede 100% da largura do contêiner pai */
     max-height: 100%; /* Mantém a proporção da altura com base na largura */
-    width: 600px;
+    width: auto;
 }
 
 .trailer_botao{
@@ -369,7 +369,7 @@ span#hamburguer.material-symbols-rounded{
 
 footer{
     background-color: var(--bg-color);
-    padding: 1em;
+    padding: 1rem;
     text-align: center;
     color: var(--text-color);
 }
@@ -377,19 +377,19 @@ footer{
 .logos_footer{
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 1rem;
 }
 
 .tamanho{
-    width: 2.5em;
+    width: 2.5rem;
 }
 
 .texto_footer{
-    font-size: 0.6em;
+    font-size: 0.6rem;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     margin:0;
-    padding-top: .8rem;
+    padding-top: 0.8rem;
     color: var(--color-white);
 }
 
@@ -410,13 +410,13 @@ footer{
 .card{
     border: none;
     border-radius: 10px;
-    box-shadow: 2px  6px 8px 0 rgba(22, 22, 26, 0.18);
-    margin: 10px;
+    box-shadow: 0.125rem 0.375rem 0.5rem 0 rgba(22, 22, 26, 0.18);
+    margin: 1rem;
     display: block;
 }
 
 .carousel-inner{
-    padding: 1em;
+    padding: 1rem;
 }
 
 /*------------------------------------------------------Aprendizados------------------------------------------------------*/
@@ -447,7 +447,7 @@ footer{
     height: 3rem;
     background-color: rgba(0, 0, 0, .1);
     border: solid rgba(0, 0, 0, .15);
-    border-width: 1px 0;
+    border-width: 0.0625rem 0;
     box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
   }
 
@@ -473,7 +473,7 @@ footer{
     display: flex;
     flex-wrap: nowrap;
     padding-bottom: 1rem;
-    margin-top: -1px;
+    margin-top: -0.0625rem;
     overflow-x: auto;
     text-align: center;
     white-space: nowrap;
@@ -494,12 +494,12 @@ footer{
   }
   
   .card2:hover {
-    transform: translateY(-5px);
+    transform: translateY(-0.3125rem);
   }
   
   .card2-img-top {
     object-fit: cover;
-    height: 225px;
+    height: 14.0625rem;
   }
   
   div.card-body{
@@ -525,7 +525,7 @@ footer{
 }
 
 #contatos input.form-control{
-    height: 44px;
+    height: 2.75rem;
 }
 
 /*------------------------------------------------------botoes------------------------------------------------------*/
@@ -548,9 +548,9 @@ div.main-btn {
     display: inline-block; /* Altere para "inline-block" para que ele ocupe apenas o espaço necessário */
     width: auto; /* Defina a largura para "auto" para se ajustar ao conteúdo */
     height: auto; /* Defina a altura para "auto" para se ajustar ao conteúdo */
-    margin: 10px;
+    margin: 0.625rem;
     width: 60%;
-    min-width: 150px;
+    min-width: 9.375rem;
     justify-content: space-around;
 }
 
@@ -561,11 +561,11 @@ a.btn{
     border: 0.125em solid var(--main-color);
     font-size: 1em;
     font-weight: 600;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     transition: all 0.6s ease-in-out;
     justify-content: space-between;
     text-align: center;
-    min-width: 150px;
+    min-width: 9.375rem;
 }
 
 a.bv{
@@ -575,11 +575,11 @@ a.bv{
     border: 0.125em solid var(--bg-color);
     font-size: 1em;
     font-weight: 600;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     transition: all 0.6s ease-in-out;
     justify-content: space-between;
     text-align: center;
-    min-width: 150px;
+    min-width: 9.375rem;
 }
 
 a.btn.dois{
@@ -589,11 +589,11 @@ a.btn.dois{
     border: 0.125em solid #141414;
     font-size: 1em;
     font-weight: 600;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     transition: all 0.6s ease-in-out;
     justify-content: space-between;
     text-align: center;
-    min-width: 150px;
+    min-width: 9.375rem;
 }
 
 a.btn.primary-btn{
@@ -604,47 +604,35 @@ a.btn.primary-btn{
     border: 0.125em solid var(--main-color);
     font-size: 1em;
     font-weight: 600;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     transition: all 0.6s ease-in-out;
     justify-content: space-between;
     text-align: center;
-    min-width: 150px;
+    min-width: 9.375rem;
 }
 
 a.primary-btn:hover {
-    transform: translateY(-0.3125em);
+    transform: translateY(-0.3125rem);
     background: transparent;
     color: var(--main-color);
     border-color:  0.125em solid var(--main-color);
 }
 
 a.dois:hover {
-    transform: translateY(-0.3125em);
+    transform: translateY(-0.3125rem);
     color: #141414;
     background: var(--text-color);
     border: 0.125em solid var(--text-color);
 }
 
 .bv:hover {
-    transform: translateY(-0.3125em);
+    transform: translateY(-0.3125rem);
     color: #141414;
     background: var(--text-color);
     border: 0.125em solid var(--text-color);
 }
 
 /*------------------------------------------------------Elas na tech------------------------------------------------------*/
-
-.bloco{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    max-width: auto; /* Defina a largura máxima desejada */
-    margin: 0 auto; /* Centralize o container horizontalmente */
-    padding: 20px;
-    box-sizing: border-box; /* Inclua preenchimento e borda na largura total */
-}
 
 .rows{
     display: flex;
@@ -698,7 +686,7 @@ a.dois:hover {
 
     .header_nav ul{
         margin-right: 2em;
-        font-size: .9em;
+        font-size: 0.9rem;
     }
 
     .header_nav li{
@@ -746,7 +734,7 @@ a.dois:hover {
     }
     
     .card{
-        margin: 0 .5em;
+        margin: 0 0.5em;
         width: calc(100%/3);
         text-align: center;
     }
@@ -809,7 +797,7 @@ a.dois:hover {
     .fontg{
         font-size: 1.6em;
         display: flex;
-        letter-spacing: 1px;
+        letter-spacing: 0.0625em;
         justify-content: center;
     }
 
@@ -827,8 +815,8 @@ a.dois:hover {
     
     main{
         background-color: var(--bg-color);
-        padding: 20px;
-        margin-top: 10px;
+        padding: 1.25rem;
+        margin-top: 0.625rem;
         width: 100%; /* Define a largura para ocupar todo o HTML. */
         box-sizing: border-box;
     }
@@ -846,7 +834,7 @@ a.dois:hover {
     }
 
     header{
-        padding: 0.6875em 4%;
+        padding: 0.6875rem 4%;
         background: #2d2d2d;
         width: 100%;
     }
@@ -857,7 +845,7 @@ a.dois:hover {
     }
 
     .home{
-        padding-top: 10px;
+        padding-top: 0.625rem;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -869,8 +857,8 @@ a.dois:hover {
     .home-text{
         order: 2;
         text-align: center;
-        padding: 0 20px;
-        padding-top: 0px;
+        padding: 0 1.25rem;
+        padding-top: 0;
         margin-bottom: 1rem;
     }
 
@@ -887,7 +875,7 @@ a.dois:hover {
         width: 100%;
         height: auto;
         animation: imgg 2s ease-in-out infinite;
-        margin-top: 80px;
+        margin-top: 0.625rem;
         object-fit: contain;
     }
 
@@ -900,7 +888,7 @@ a.dois:hover {
         display: inline-block;
         margin-bottom: 4em; /* Ajuste o valor conforme necessário */
         padding: 0.5em 1.25em; /* Tamanho menor para telas menores */
-        min-width: 150px;
+        min-width: 10rem;
         background-color: #141414;
         color: var(--text-color);
         text-align: center;
@@ -908,7 +896,7 @@ a.dois:hover {
         transition: all 0.6s ease-in-out;
         font-size: 1em;
         font-weight: 600;
-        border-radius: 8px;
+        border-radius: 0.5rem;
         border: 0.125em solid #141414;
         margin: 0;
     }
@@ -918,7 +906,7 @@ a.dois:hover {
         display: inline-block;
         margin-bottom: 4em; /* Ajuste o valor conforme necessário */
         padding: 0.5em 1.25em; /* Tamanho menor para telas menores */
-        min-width: 150px;
+        min-width: 10rem;
         background-color: var(--main-color);
         color: var(--text-color);
         text-align: center;
@@ -926,7 +914,7 @@ a.dois:hover {
         transition: all 0.6s ease-in-out;
         font-size: 1em;
         font-weight: 600;
-        border-radius: 8px;
+        border-radius: 0.5rem;
         border: 0.125em solid var(--main-color);
         margin: 0;
 
@@ -943,9 +931,9 @@ a.dois:hover {
         display: inline-block; /* Altere para "inline-block" para que ele ocupe apenas o espaço necessário */
         width: auto; /* Defina a largura para "auto" para se ajustar ao conteúdo */
         height: auto; /* Defina a altura para "auto" para se ajustar ao conteúdo */
-        margin: 10px;
+        margin: 1em;
         width: 100%;
-        min-width: 150px;
+        min-width: 10rem;
     }
 
     section{
@@ -959,7 +947,7 @@ a.dois:hover {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-top: 20px;
+        padding-top: 1.25em;
         padding-bottom: 0;
     }
 
@@ -982,7 +970,7 @@ a.dois:hover {
     }
 
     section.conquista_cards{
-        padding: 0 10px;
+        padding: 0 0.625em;
     }
 
     .image-wrapper{
@@ -999,9 +987,9 @@ a.dois:hover {
     
     .card{
         border: none;
-        border-radius: 10px;
-        box-shadow: 2px  6px 8px 0 rgba(22, 22, 26, 0.18);
-        margin: 10px;
+        border-radius: 0.625rem;
+        box-shadow: 0.15625rem 0.46875rem 0.625rem 0 rgba(22, 22, 26, 0.18);
+        margin: 1em;
         display: block;
     }
     
@@ -1013,13 +1001,9 @@ a.dois:hover {
         text-align: center;
     }
 
-    .bloco {
-        flex-direction: column; /* Altera a direção para coluna */
-        text-align: center; /* Centraliza o texto */
-    }
     
     .left {
-        margin-bottom: 20px; /* Adiciona um espaçamento entre a imagem e o texto */
+        margin-bottom: 1.25em; /* Adiciona um espaçamento entre a imagem e o texto */
     }
     
     img.elas {
@@ -1038,7 +1022,7 @@ a.dois:hover {
         width: 100%;
         height: auto; /* Altere para 'auto' para manter a proporção da imagem */
         object-fit: contain;
-        margin-top: 5px;
+        margin-top: 0.3125em;
         max-width: 100%; /* Adicione um valor máximo de largura */
     }
 
@@ -1052,7 +1036,7 @@ a.dois:hover {
         padding: 1em 2em;
         background-color: var(--bg-color);
         color: var(--text-color);
-        border-radius: 8px;
+        border-radius: 0.5rem;
         text-transform: uppercase;
     }
     
