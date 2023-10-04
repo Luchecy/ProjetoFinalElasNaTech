@@ -165,7 +165,7 @@ span{
 .header_nav a.cont {
     background-color: var(--main-color);
     color: var(--text-color);
-    padding: 0.25rem; /*aqui ta dando bo*/
+    padding: 4px; /*aqui ta dando bo*/
 }
 
 .header_nav a.cont:hover {
@@ -837,6 +837,7 @@ a.dois:hover {
         padding: 0.6875rem 4%;
         background: #2d2d2d;
         width: 100%;
+        box-sizing: border-box;
     }
 
     header.header {
@@ -1036,7 +1037,7 @@ a.dois:hover {
         padding: 1em 2em;
         background-color: var(--bg-color);
         color: var(--text-color);
-        border-radius: 0.5rem;
+        border-radius: 8px;
         text-transform: uppercase;
     }
     
