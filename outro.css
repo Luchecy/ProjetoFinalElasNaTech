@@ -13,7 +13,7 @@
     --bg-color: #1f1f21;
     --main-color: #ffae00;
     --text-color: #ffffff;
-    --big-font: 4rem;
+    --big-font: 5rem;
     --p-font: 1.1rem;
     transition: .2s;
     
@@ -51,9 +51,9 @@ span{
 }
 
 .fontg{
-    font-size: 4em;
+    font-size: 4rem;
     display: flex;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.25em;
     justify-content: center;
 }
 
@@ -93,8 +93,8 @@ span{
 /*------------------------------------------------------Divisor de sessões------------------------------------------------------*/
 
 .featurette-divider{
-    margin: 0.5rem;
-    padding: 0.1rem;
+    margin: 1rem;
+    padding: 0.5rem;
     width: 100%;
     color: var(--text-color);
     border: 0;
@@ -145,7 +145,7 @@ span{
 
 .header_nav a{
     color: var(--color-white);
-    padding: 0.5em;
+    padding: 1em;
     text-decoration: none;
 }
 
@@ -165,7 +165,7 @@ span{
 .header_nav a.cont {
     background-color: var(--main-color);
     color: var(--text-color);
-    padding: 0.3em; /*aqui ta dando bo*/
+    padding: 0.5em; /*aqui ta dando bo*/
 }
 
 .header_nav a.cont:hover {
@@ -206,7 +206,7 @@ span{
     background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
     box-shadow: 0em 1.25em 2.5em #00000070;
     border: 0.0625em solid #3b3b3b;
-    border-radius: 100px;
+    border-radius: 10px;
     color: var(--text-color);
     font-weight: 700;
     font-size: var(--p-font);
@@ -286,7 +286,7 @@ section.trailer{
 }
 
 .trailer_video .tamanhovideo{
-    border-radius: .8em;
+    border-radius: 0.8em;
     margin-bottom: 1em;
 }
 
@@ -332,7 +332,7 @@ section.trailer{
 }
 
 .imagem .tamanhoimagem{
-    border-radius: .8em;
+    border-radius: 0.8em;
     margin-bottom: 1em;
 }
 
@@ -385,7 +385,7 @@ footer{
 }
 
 .texto_footer{
-    font-size: 0.6em;
+    font-size: 0.6rem;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     margin:0;
@@ -411,12 +411,12 @@ footer{
     border: none;
     border-radius: 10px;
     box-shadow: 0.125rem 0.375rem 0.5rem 0 rgba(22, 22, 26, 0.18);
-    margin: 0,625rem;
+    margin: 1rem;
     display: block;
 }
 
 .carousel-inner{
-    padding: 1em;
+    padding: 1rem;
 }
 
 /*------------------------------------------------------Aprendizados------------------------------------------------------*/
@@ -494,7 +494,7 @@ footer{
   }
   
   .card2:hover {
-    transform: translateY(-0,3125rem);
+    transform: translateY(-0.3125rem);
   }
   
   .card2-img-top {
@@ -550,7 +550,7 @@ div.main-btn {
     height: auto; /* Defina a altura para "auto" para se ajustar ao conteúdo */
     margin: 0.625rem;
     width: 60%;
-    min-width: 9,375rem;
+    min-width: 9.375rem;
     justify-content: space-around;
 }
 
@@ -561,7 +561,7 @@ a.btn{
     border: 0.125em solid var(--main-color);
     font-size: 1em;
     font-weight: 600;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     transition: all 0.6s ease-in-out;
     justify-content: space-between;
     text-align: center;
@@ -572,10 +572,10 @@ a.bv{
     display: inline-block;
     background: var(--bg-color);
     color: var(--text-color);
-    border: 0.1em solid var(--bg-color);
-    font-size: 0.8em;
-    font-weight: 400;
-    border-radius: 8px;
+    border: 0.125em solid var(--bg-color);
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 0.5rem;
     transition: all 0.6s ease-in-out;
     justify-content: space-between;
     text-align: center;
@@ -589,7 +589,7 @@ a.btn.dois{
     border: 0.125em solid #141414;
     font-size: 1em;
     font-weight: 600;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     transition: all 0.6s ease-in-out;
     justify-content: space-between;
     text-align: center;
@@ -604,7 +604,7 @@ a.btn.primary-btn{
     border: 0.125em solid var(--main-color);
     font-size: 1em;
     font-weight: 600;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     transition: all 0.6s ease-in-out;
     justify-content: space-between;
     text-align: center;
@@ -612,21 +612,21 @@ a.btn.primary-btn{
 }
 
 a.primary-btn:hover {
-    transform: translateY(-0.3125em);
+    transform: translateY(-0.3125rem);
     background: transparent;
     color: var(--main-color);
     border-color:  0.125em solid var(--main-color);
 }
 
 a.dois:hover {
-    transform: translateY(-0.3125em);
+    transform: translateY(-0.3125rem);
     color: #141414;
     background: var(--text-color);
     border: 0.125em solid var(--text-color);
 }
 
 .bv:hover {
-    transform: translateY(-0.3125em);
+    transform: translateY(-0.3125rem);
     color: #141414;
     background: var(--text-color);
     border: 0.125em solid var(--text-color);
@@ -667,7 +667,7 @@ a.dois:hover {
     }
 
     .header_logo{
-        margin-left: 1em;
+        margin-left: 2em;
         text-decoration: none;
     }
 
@@ -686,7 +686,7 @@ a.dois:hover {
 
     .header_nav ul{
         margin-right: 2em;
-        font-size: 0.85em;
+        font-size: 0.9rem;
     }
 
     .header_nav li{
@@ -750,7 +750,6 @@ a.dois:hover {
         font-size: 3.5rem;
     }
 
-
 }
 
 
@@ -791,12 +790,12 @@ a.dois:hover {
 
     :root{
         --big-font: 4rem;
-        --p-font: 0.7rem;
+        --p-font: 0.8rem;
         transition: .2s;
     }
 
     .fontg{
-        font-size: 2em;
+        font-size: 1.6em;
         display: flex;
         letter-spacing: 0.0625em;
         justify-content: center;
@@ -835,9 +834,10 @@ a.dois:hover {
     }
 
     header{
-        padding: 0.6875em 4%;
+        padding: 0.6875rem 4%;
         background: #2d2d2d;
         width: 100%;
+        box-sizing: border-box;
     }
 
     header.header {
@@ -876,20 +876,20 @@ a.dois:hover {
         width: 100%;
         height: auto;
         animation: imgg 2s ease-in-out infinite;
-        margin-top: 4rem;
+        margin-top: 0.625rem;
         object-fit: contain;
     }
 
     .home-text span {
         padding: 0.2em 1em; /* Ajuste o padding conforme necessário */
-        font-size: 0.9em; /* Ajuste o tamanho da fonte conforme necessário */
+        font-size: 1em; /* Ajuste o tamanho da fonte conforme necessário */
     }
 
     a.btn.dois {
         display: inline-block;
         margin-bottom: 4em; /* Ajuste o valor conforme necessário */
         padding: 0.5em 1.25em; /* Tamanho menor para telas menores */
-        min-width: 8rem;
+        min-width: 10rem;
         background-color: #141414;
         color: var(--text-color);
         text-align: center;
@@ -897,7 +897,7 @@ a.dois:hover {
         transition: all 0.6s ease-in-out;
         font-size: 1em;
         font-weight: 600;
-        border-radius: 8px;
+        border-radius: 0.5rem;
         border: 0.125em solid #141414;
         margin: 0;
     }
@@ -907,7 +907,7 @@ a.dois:hover {
         display: inline-block;
         margin-bottom: 4em; /* Ajuste o valor conforme necessário */
         padding: 0.5em 1.25em; /* Tamanho menor para telas menores */
-        min-width: 5rem;
+        min-width: 10rem;
         background-color: var(--main-color);
         color: var(--text-color);
         text-align: center;
@@ -915,7 +915,7 @@ a.dois:hover {
         transition: all 0.6s ease-in-out;
         font-size: 1em;
         font-weight: 600;
-        border-radius: 8px;
+        border-radius: 0.5rem;
         border: 0.125em solid var(--main-color);
         margin: 0;
 
@@ -934,7 +934,7 @@ a.dois:hover {
         height: auto; /* Defina a altura para "auto" para se ajustar ao conteúdo */
         margin: 1em;
         width: 100%;
-        min-width: 9,375rem;
+        min-width: 10rem;
     }
 
     section{
@@ -988,7 +988,7 @@ a.dois:hover {
     
     .card{
         border: none;
-        border-radius: 10px;
+        border-radius: 0.625rem;
         box-shadow: 0.15625rem 0.46875rem 0.625rem 0 rgba(22, 22, 26, 0.18);
         margin: 1em;
         display: block;
@@ -1002,10 +1002,6 @@ a.dois:hover {
         text-align: center;
     }
 
-    .bloco {
-        flex-direction: column; /* Altera a direção para coluna */
-        text-align: center; /* Centraliza o texto */
-    }
     
     .left {
         margin-bottom: 1.25em; /* Adiciona um espaçamento entre a imagem e o texto */
@@ -1053,10 +1049,6 @@ a.dois:hover {
 
     a.btn.bv{
         display: block;
-    }
-
-    a.btn.bv.trailer_botao{
-        padding: 0.375rem 0.75rem;
     }
 
 }
