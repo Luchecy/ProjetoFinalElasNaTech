@@ -171,7 +171,7 @@ span{
 .header_nav a.cont {
     background-color: var(--main-color);
     color: var(--text-color);
-    padding: 0.3em; /*aqui ta dando bo*/
+    padding: 0.3em;
 }
 
 .header_nav a.cont:hover {
@@ -296,7 +296,7 @@ section.trailer{
 }
 
 .trailer div iframe {
-    max-width: 100%; /* Mas não excede 100% da largura do contêiner pai */
+    max-width: 100%; /* ão excede 100% da largura do contêiner pai */
     max-height: auto; /* Mantém a proporção da altura com base na largura */
 }
 
@@ -342,9 +342,9 @@ section.trailer{
 }
 
 img.tamanhoimagem{
-    max-width: 100%; /* Mas não excede 100% da largura do contêiner pai */
+    max-width: 100%; /* não excede 100% da largura do contêiner pai */
     max-height: 100%; /* Mantém a proporção da altura com base na largura */
-    width: 70%;
+    width: 90%;
 }
 
 .trailer_botao{
@@ -512,13 +512,15 @@ footer{
     border-radius: 10px;
   }
 
-  .cardprojetos{
-    min-height: 550px;
-  }
 
-  img.card-img-top{
+  img.card-img-top {
     border-radius: 10px;
-  }
+    transition: transform 0.3s; /* Adicione uma transição suave de 0,3 segundos */
+}
+
+img.card-img-top:hover {
+    transform: scale(1.05); /* Amplia a imagem em 10% (1.1 vezes) ao passar o mouse por cima */
+}
 
 /*------------------------------------------------------contatos------------------------------------------------------*/
 
@@ -554,9 +556,9 @@ footer{
 }
 
 div.main-btn {
-    display: inline-block; /* Altere para "inline-block" para que ele ocupe apenas o espaço necessário */
-    width: auto; /* Defina a largura para "auto" para se ajustar ao conteúdo */
-    height: auto; /* Defina a altura para "auto" para se ajustar ao conteúdo */
+    display: inline-block;
+    width: auto;
+    height: auto;
     margin: 0.625rem;
     width: 60%;
     min-width: 9,375rem;
@@ -685,7 +687,7 @@ a.dois:hover {
     }
 
     .header_logo:hover {
-        color: var(--text-color); /* Altere para a cor desejada para o texto do link */
+        color: var(--text-color);
         
     }
 
@@ -886,19 +888,19 @@ a.dois:hover {
         width: 100%;
         height: auto;
         animation: imgg 2s ease-in-out infinite;
-        margin-top: 4rem;
+        margin-top: 4.5rem;
         object-fit: contain;
     }
 
     .home-text span {
-        padding: 0.2em 1em; /* Ajuste o padding conforme necessário */
-        font-size: 0.9em; /* Ajuste o tamanho da fonte conforme necessário */
+        padding: 0.2em 1em; 
+        font-size: 0.9em; 
     }
 
     a.btn.dois {
         display: inline-block;
-        margin-bottom: 4em; /* Ajuste o valor conforme necessário */
-        padding: 0.5em 1.25em; /* Tamanho menor para telas menores */
+        margin-bottom: 4em; 
+        padding: 0.5em 1.25em;
         min-width: 8rem;
         background-color: #141414;
         color: var(--text-color);
@@ -915,8 +917,8 @@ a.dois:hover {
     a.btn.primary-btn{
 
         display: inline-block;
-        margin-bottom: 4em; /* Ajuste o valor conforme necessário */
-        padding: 0.5em 1.25em; /* Tamanho menor para telas menores */
+        margin-bottom: 4em; 
+        padding: 0.5em 1.25em; 
         min-width: 5rem;
         background-color: var(--main-color);
         color: var(--text-color);
@@ -939,9 +941,9 @@ a.dois:hover {
     }
 
     div.main-btn {
-        display: inline-block; /* Altere para "inline-block" para que ele ocupe apenas o espaço necessário */
-        width: auto; /* Defina a largura para "auto" para se ajustar ao conteúdo */
-        height: auto; /* Defina a altura para "auto" para se ajustar ao conteúdo */
+        display: inline-block; 
+        width: auto; 
+        height: auto;
         margin: 1em;
         width: 100%;
         min-width: 9,375rem;
@@ -950,7 +952,7 @@ a.dois:hover {
     section{
         padding: 4.375em 4%;
         display: flex;
-        flex-direction: column; /* Altere para flex-direction: column; */
+        flex-direction: column;
         align-items: center;
     }
 
@@ -972,7 +974,7 @@ a.dois:hover {
 
     .header_logo:hover {
         text-decoration: none;
-        color: var(--text-color); /* Altere para a cor desejada para o texto do link */
+        color: var(--text-color);
     }
 
     .image-wrapper img{
@@ -1013,32 +1015,31 @@ a.dois:hover {
     }
 
     .bloco {
-        flex-direction: column; /* Altera a direção para coluna */
-        text-align: center; /* Centraliza o texto */
+        flex-direction: column;
+        text-align: center; 
     }
     
     .left {
-        margin-bottom: 1.25em; /* Adiciona um espaçamento entre a imagem e o texto */
+        margin-bottom: 1.25em;
     }
     
     img.elas {
-        width: 100%; /* Faz a imagem ocupar toda a largura da coluna */
-        height: auto; /* Mantém a proporção da imagem */
+        width: 100%; 
+        height: auto; 
         object-fit: contain;
         
     }
 
     .foto-img {
-        /* Remova a restrição de largura */
         height: auto;
     }
     
     .foto-img img {
         width: 100%;
-        height: auto; /* Altere para 'auto' para manter a proporção da imagem */
+        height: auto; 
         object-fit: contain;
         margin-top: 0.3125em;
-        max-width: 100%; /* Adicione um valor máximo de largura */
+        max-width: 100%;
     }
 
     .trailer_video{
