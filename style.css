@@ -13,8 +13,8 @@
     --bg-color: #1f1f21;
     --main-color: #ffae00;
     --text-color: #ffffff;
-    --big-font: 4rem;
-    --p-font: 1.1rem;
+    --big-font: 3.5rem;
+    --p-font: 1rem;
     transition: .2s;
     
 }
@@ -51,7 +51,7 @@ span{
 }
 
 .fontg{
-    font-size: 4em;
+    font-size: 3em;
     display: flex;
     letter-spacing: 0.1em;
     justify-content: center;
@@ -90,11 +90,17 @@ span{
     color: #1f1f21!important;
 }
 
+.paragrafo-sobre {
+    max-width: 700px; /* Defina a largura máxima desejada */
+    margin: 0;   /* Para centralizar o parágrafo na tela */
+    box-sizing: border-box;
+}
+
 /*------------------------------------------------------Divisor de sessões------------------------------------------------------*/
 
 .featurette-divider{
-    margin: 0.5rem;
-    padding: 0.1rem;
+    margin: 0.5rem 0;
+    padding: 0.1rem 0;
     width: 100%;
     color: var(--text-color);
     border: 0;
@@ -184,6 +190,7 @@ span{
     justify-content: space-around;
     gap: 1.875em;
     background-color: var(--bg-color);
+    padding: 0.625rem;
 }
 
 .home-img {
@@ -195,7 +202,6 @@ span{
     width: 100%;
     height: 100%;
     object-fit: contain;
-    margin-top: 0.3125rem;
     animation: imgg 2s ease-in-out infinite;
     animation-delay: 2s;
     max-width: 28.125em;
@@ -218,16 +224,15 @@ span{
     font-size: var(--big-font);
     margin: 0;
     color: var(--text-color);
-    margin-bottom: 1.25rem;
     margin-top: 1.25rem;
 }
 
 .home-text p {
-    font-size: var(--p-font);
+    font-size: 1.2em;
     font-weight: 400;
     color: #c3c3c3;
     line-height: 1.875em;
-    margin-bottom: 1.875rem;
+    text-align: justify;
 }
 
 /*------------------------------------------------------div share------------------------------------------------------*/
@@ -237,8 +242,8 @@ span{
     position: absolute;
     align-items: end;
     justify-content: flex-end;
-    left: 8%;
-    top: 80%;
+    left: 7%;
+    top: 85%;
     box-sizing: border-box;
 }
 
@@ -339,7 +344,7 @@ section.trailer{
 img.tamanhoimagem{
     max-width: 100%; /* Mas não excede 100% da largura do contêiner pai */
     max-height: 100%; /* Mantém a proporção da altura com base na largura */
-    width: auto;
+    width: 70%;
 }
 
 .trailer_botao{
@@ -505,6 +510,10 @@ footer{
   div.card-body{
     background-color: var(--text-color);
     border-radius: 10px;
+  }
+
+  .cardprojetos{
+    min-height: 550px;
   }
 
   img.card-img-top{
@@ -828,6 +837,7 @@ a.dois:hover {
 
     div.home-text{
         align-items: center;
+        box-sizing: border-box;
     }
 
     .share {
